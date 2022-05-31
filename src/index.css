@@ -1,0 +1,98 @@
+body {
+  font-family: 'Roboto', serif;
+  background-color: #151515;
+  color: #ddd;
+  margin: 0;
+  overflow: hidden;
+  font-family: 'Roboto', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h2 {
+  font-family: 'Oxanium', serif;
+  font-size: 2em;
+  color: yellow;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+#apps {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+#vanilla {
+  height: calc(100vh - 2rem);
+  overflow-y:scroll;
+  border-right: 2px solid #555;
+  padding: 1rem;
+}
+
+#root {
+  height: 100vh;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+}
+
+#functional-comp, #class-comp {
+  overflow-y: scroll;
+  padding: 1rem;
+}
+
+#functional-comp {
+  border-bottom: 2px solid #555;
+}
+
+table {
+  margin-top: 1rem;
+  border-collapse: separate;
+  border-spacing: 0;
+  padding: 0.5em;
+}
+
+table td, table th {
+  background-color: #252525;
+  border-bottom: 1px solid #444;
+  text-align: center;
+  padding: 0.75rem;
+  font-family: 'Roboto', serif;
+  font-size: large;
+}
+
+table td:nth-child(1), table th:nth-child(1) {
+  text-align: left;
+  padding-left: 1em;
+}
+
+table th {
+  background-color: #321dce;
+  color: #fff;
+  border-bottom: 2px solid #aaa;
+  font-weight: 700;
+}
+
+input {
+  background-color: #444;
+  color: #fff;
+  padding: 0.45em;
+  border-radius: 1em;
+  border: none;
+  font-family: 'Roboto', serif;
+  font-size: medium;
+  margin-bottom: 0.5em;
+}
+
+span {
+  padding-left: 0.5em;
+  padding-left: 0.25em;
+  font-family: 'Roboto', serif;
+  font-size: medium;
+}
+
+.loader {
+  margin-top: 1rem;
+}

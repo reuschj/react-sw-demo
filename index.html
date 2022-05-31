@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/src/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@500&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+  </head>
+  <body>
+    <div id="apps">
+      <div id="vanilla">
+        <h2 id="v-title"></h2>
+        <span id="v-filter-label"></span>: <input placeholder="TBD" id="v-filter" /> <span id="v-multiplier-label"></span>:
+        <input
+          id="v-multiplier"
+          placeholder="Multiplier"
+          type="number"
+          value="10"
+          defaultValue="10"
+          min="1"
+          max="20"
+        />
+        <span id="v-reset-fields"></span>
+        <div id="v-loader" class="loader">Loading...</div>
+        <table width="100%" id="v-table">
+          <thead>
+            <tr>
+              <th id="v-col-name"></th>
+              <th id="v-col-height"></th>
+              <th id="v-col-mass"></th>
+              <th id="v-col-power"></th>
+            </tr>
+          </thead>
+          <tbody id="v-tbody"></tbody>
+        </table>
+      </div>
+      <div id="root"></div>
+    </div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
